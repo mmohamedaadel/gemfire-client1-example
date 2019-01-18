@@ -1,0 +1,13 @@
+logging:
+  level:
+    com.zaxxer.hikari.HikariConfig: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env, info, health
+
+---
+spring:
+  profiles: default, cloud
+
